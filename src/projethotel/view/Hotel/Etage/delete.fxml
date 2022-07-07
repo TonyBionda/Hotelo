@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="333.0" prefWidth="497.0" style="-fx-background-color: white;" stylesheets="@../../style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projethotel.view.Hotel.Etage.EtageDeleteController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="269.0" prefWidth="497.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="26.0" prefWidth="255.0" text="SUPPRIMER">
+               <font>
+                  <Font name="Cambria" size="19.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="25.0" prefWidth="255.0" text="Étage">
+               <font>
+                  <Font name="Cambria" size="17.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="37.0" prefWidth="416.0">
+               <children>
+                  <Label text="Voulez vous vraiment supprimer cet étage ?">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="117.0" prefWidth="416.0">
+               <children>
+                  <TableView fx:id="list_supprimer" prefHeight="0.0" prefWidth="416.0" />
+               </children>
+            </HBox>
+            <JFXCheckBox fx:id="checkbox" prefHeight="65.0" prefWidth="444.0" text="En cochant cette case, vous acceptez de supprimer cet étage." textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXCheckBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="-5.0" layoutY="271.0" prefHeight="47.0" prefWidth="504.0">
+         <children>
+            <JFXButton fx:id="annuler" onAction="#retour" prefHeight="25.0" prefWidth="90.0" styleClass="logout" text="Annuler" />
+            <JFXButton fx:id="valider" disable="true" onAction="#valider" prefHeight="25.0" prefWidth="90.0" styleClass="logout" text="Valider">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="459.0" prefWidth="718.0" style="-fx-background-color: #212755;" stylesheets="@../../style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projethotel.view.Hotel.Reservation.ReservationAdd2Controller">
+   <children>
+      <AnchorPane layoutX="28.0" layoutY="14.0" prefHeight="179.0" prefWidth="374.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+         <children>
+            <Label layoutX="88.0" layoutY="14.0" text="Rappel de la Réservation">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TableView fx:id="list" layoutX="8.0" layoutY="40.0" prefHeight="130.0" prefWidth="358.0" style="-fx-background-color: white; -fx-background-radius: 10;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="422.0" layoutY="14.0" prefHeight="432.0" prefWidth="282.0" style="-fx-background-color: #fefdfd; -fx-background-radius: 15;">
+         <children>
+            <Label layoutX="49.0" layoutY="14.0" text="Créer un compte Client">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="64.0" prefHeight="25.0" prefWidth="75.0" text="Nom" textFill="#d32f2f" />
+            <Label layoutX="62.0" layoutY="127.0" prefHeight="25.0" prefWidth="75.0" text="Prénom" textFill="#d32f2f" />
+            <JFXTextField fx:id="field_nom" focusColor="#2d323d" layoutX="62.0" layoutY="89.0" prefHeight="25.0" prefWidth="169.0" unFocusColor="#a1a2a4" />
+            <Label fx:id="client_errorRight" layoutX="74.0" layoutY="329.0" prefHeight="41.0" prefWidth="135.0" textAlignment="CENTER" textFill="RED" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="192.0" prefHeight="25.0" prefWidth="185.0" text="Adresse e-Mail" textFill="#d32f2f" />
+            <JFXTextField fx:id="field_prenom" focusColor="#2d323d" layoutX="62.0" layoutY="152.0" prefHeight="25.0" prefWidth="169.0" unFocusColor="#a1a2a4" />
+            <JFXTextField fx:id="field_mail" focusColor="#2d323d" layoutX="62.0" layoutY="217.0" prefHeight="25.0" prefWidth="169.0" unFocusColor="#a1a2a4" />
+            <Label layoutX="62.0" layoutY="255.0" prefHeight="25.0" prefWidth="75.0" text="Téléphone" textFill="#d32f2f" />
+            <JFXTextField fx:id="field_telephone" focusColor="#2d323d" layoutX="62.0" layoutY="280.0" prefHeight="25.0" prefWidth="169.0" unFocusColor="#a1a2a4" />
+            <JFXButton fx:id="validerRight" layoutX="74.0" layoutY="382.0" onAction="#validerRight" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: #212755;" text="Valider et Reserver" textFill="WHITE" />
+            <JFXProgressBar fx:id="progress_barRight" layoutX="41.0" layoutY="418.0" prefHeight="4.0" visible="false" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="29.0" layoutY="220.0" prefHeight="225.0" prefWidth="297.0" style="-fx-background-color: #fefdfd; -fx-background-radius: 15;">
+         <children>
+            <Label layoutX="91.0" layoutY="14.0" text="Client Existant">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="validerLeft" disable="true" layoutX="81.0" layoutY="164.0" onAction="#validerLeft" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: #212755;" text="Valider et Reserver" textFill="WHITE" />
+            <Label fx:id="client_errorLeft" layoutX="43.0" layoutY="113.0" prefHeight="41.0" prefWidth="200.0" textAlignment="CENTER" textFill="RED" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <JFXProgressBar fx:id="progress_barLeft" layoutX="49.0" layoutY="209.0" prefHeight="4.0" visible="false" />
+            <Label layoutX="16.0" layoutY="71.0" prefHeight="25.0" prefWidth="115.0" text="Selectionner :" textFill="#d32f2f" />
+            <JFXComboBox fx:id="combo_box" layoutX="143.0" layoutY="71.0" prefHeight="25.0" prefWidth="135.0" promptText="Client" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="359.0" layoutY="317.0" text="OU" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

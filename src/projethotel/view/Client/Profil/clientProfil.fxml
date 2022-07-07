@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="646.0" prefWidth="1011.0" style="-fx-background-color: #EEEEEE;" stylesheets="@../../style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projethotel.view.Client.Profil.clientProfilController">
+   <children>
+      <HBox prefHeight="47.0" prefWidth="863.0" style="-fx-background-color: #d32f2f;">
+         <children>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.0" prefHeight="0.0" prefWidth="0.0" style="-fx-background-color: white;" text="Button" />
+            <JFXButton fx:id="ClientReserver" prefHeight="48.0" prefWidth="206.0" style="-fx-background-radius: 0;" styleClass="clientMenu" text="Réserver" textFill="#fcf7f9">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="ClientReservation" prefHeight="48.0" prefWidth="206.0" style="-fx-background-radius: 0;" styleClass="clientMenu" text="Mes réservations" textFill="#fcf7f9">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="ClientProfil" prefHeight="48.0" prefWidth="206.0" style="-fx-background-radius: 0;" styleClass="clientMenu" text="Mon profil" textFill="#fcf7f9">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </HBox>
+      <JFXButton fx:id="accueil" layoutX="863.0" prefHeight="48.0" prefWidth="148.0" style="-fx-background-radius: 0;" styleClass="logout" text="Déconnexion" textFill="#d32f2f">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <AnchorPane layoutY="47.0" prefHeight="599.0" prefWidth="1011.0" style="-fx-background-color: #f5f4f1;">
+         <children>
+            <Label layoutX="492.0" layoutY="272.0" text="PROFIL" />
+            <JFXButton fx:id="ClientDashboard" prefHeight="599.0" prefWidth="38.0" style="-fx-background-radius: 0; -fx-background-color: #e2e2e2;" styleClass="clientMenu" text="&lt;">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

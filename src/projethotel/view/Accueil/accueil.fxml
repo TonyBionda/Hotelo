@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="604.0" prefWidth="901.0" style="-fx-background-color: white;" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projethotel.view.Accueil.AccueilController">
+   <children>
+      <AnchorPane prefHeight="604.0" prefWidth="638.0" style="-fx-background-color: linear-gradient(#94ffe5, #ff8484);;">
+         <children>
+            <Label layoutX="214.0" layoutY="14.0" prefHeight="65.0" prefWidth="210.0" text="HOTELO">
+               <font>
+                  <Font name="Mongolian Baiti" size="52.0" />
+               </font>
+            </Label>
+            <Label layoutX="179.0" layoutY="79.0" prefHeight="37.0" prefWidth="282.0" text="Réservations et Manager">
+               <font>
+                  <Font name="Mongolian Baiti" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="247.0" layoutY="566.0" text="Connexion Clients" textFill="#fefdfd">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="46.0" layoutY="143.0" prefHeight="406.0" prefWidth="256.0" style="-fx-background-color: #fefdfd; -fx-background-radius: 15;">
+               <children>
+                  <Label layoutX="77.0" layoutY="21.0" text="Déjà inscrit ?">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="91.0" layoutY="86.0" prefHeight="25.0" prefWidth="75.0" text="Adresse Mail" textFill="#d32f2f" />
+                  <Label layoutX="91.0" layoutY="169.0" prefHeight="25.0" prefWidth="75.0" text="Mot de passe" textFill="#d32f2f" />
+                  <JFXTextField fx:id="client_loginField" focusColor="#2d323d" layoutX="61.0" layoutY="111.0" unFocusColor="#a1a2a4" />
+                  <JFXPasswordField fx:id="client_passwordField" focusColor="#2d323e" layoutX="61.0" layoutY="194.0" unFocusColor="#a1a2a4" />
+                  <JFXButton fx:id="client_loginRequest" layoutX="61.0" layoutY="292.0" onAction="#client_login" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: #212755;" text="Valider" textFill="WHITE" />
+                  <Label fx:id="client_error" layoutX="61.0" layoutY="329.0" prefHeight="50.0" prefWidth="135.0" textAlignment="CENTER" textFill="RED" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <JFXProgressBar fx:id="client_progress_bar" layoutX="29.0" layoutY="390.0" prefHeight="4.0" visible="false" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="337.0" layoutY="143.0" prefHeight="406.0" prefWidth="256.0" style="-fx-background-color: #fefdfd; -fx-background-radius: 15;">
+               <children>
+                  <Label layoutX="87.0" layoutY="21.0" text="Nouveau ?">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="23.0" layoutY="56.0" text="Inscrit toi maintenant pour réserver !">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="90.0" layoutY="218.0" prefHeight="25.0" prefWidth="75.0" text="Adresse Mail" textFill="#d32f2f" />
+                  <Label layoutX="105.0" layoutY="84.0" prefHeight="25.0" prefWidth="48.0" text="Prénom" textFill="#d32f2f" />
+                  <Label layoutX="111.0" layoutY="147.0" prefHeight="25.0" prefWidth="34.0" text="Nom" textFill="#d32f2f" />
+                  <JFXTextField fx:id="SignUp_firstnameField" focusColor="#2d323e" layoutX="60.0" layoutY="109.0" unFocusColor="#a1a2a4" />
+                  <JFXTextField fx:id="SignUp_lastnameField" focusColor="#2d323e" layoutX="60.0" layoutY="171.0" unFocusColor="#a1a2a4" />
+                  <JFXTextField fx:id="SignUp_mailField" focusColor="#2d323e" layoutX="60.0" layoutY="243.0" unFocusColor="#a1a2a4" />
+                  <JFXButton fx:id="SignUp_loginRequest" layoutX="60.0" layoutY="292.0" onAction="#client_signUp" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: #212755;" text="Inscription" textFill="WHITE" />
+                  <Label fx:id="SignUp_error" layoutX="60.0" layoutY="330.0" prefHeight="50.0" prefWidth="135.0" textAlignment="CENTER" textFill="RED" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="11.0" />
+                     </font>
+                  </Label>
+                  <JFXProgressBar fx:id="SignUp_progress_bar" layoutX="28.0" layoutY="390.0" prefHeight="4.0" visible="false" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="745.0" layoutY="230.0" prefHeight="25.0" prefWidth="58.0" text="Identifiant" />
+      <Label layoutX="737.0" layoutY="319.0" prefHeight="25.0" prefWidth="75.0" text="Mot de passe" />
+      <JFXTextField fx:id="hotel_loginField" layoutX="707.0" layoutY="255.0" />
+      <JFXPasswordField fx:id="hotel_passwordField" layoutX="706.0" layoutY="344.0" />
+      <JFXButton fx:id="Hotel_loginRequest" layoutX="707.0" layoutY="430.0" onAction="#hotel_login" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: #212755;" text="Valider" textFill="WHITE" />
+      <Label layoutX="700.0" layoutY="156.0" prefHeight="41.0" prefWidth="148.0" text="HOTELO">
+         <font>
+            <Font name="Mongolian Baiti" size="37.0" />
+         </font>
+      </Label>
+      <Label fx:id="hotel_error" layoutX="706.0" layoutY="481.0" prefHeight="50.0" prefWidth="135.0" textAlignment="CENTER" textFill="RED" wrapText="true">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="703.0" layoutY="564.0" text="Connexion Hôtels">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXProgressBar fx:id="hotel_progress_bar" layoutX="675.0" layoutY="552.0" prefHeight="4.0" visible="false" />
+   </children>
+</AnchorPane>

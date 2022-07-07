@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="398.0" prefWidth="416.0" style="-fx-background-color: white;" stylesheets="@../../style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projethotel.view.Hotel.Employe.EmployeAddController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutY="1.0" prefHeight="271.0" prefWidth="416.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="26.0" prefWidth="255.0" text="AJOUTER">
+               <font>
+                  <Font name="Cambria" size="19.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="25.0" prefWidth="255.0" text="Employé">
+               <font>
+                  <Font name="Cambria" size="17.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="416.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="145.0" text="Nom" />
+                  <JFXTextField fx:id="input_nom" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="416.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="142.0" text="Prénom" />
+                  <JFXTextField fx:id="input_prenom" prefHeight="25.0" prefWidth="133.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="416.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="146.0" text="Adresse" />
+                  <JFXTextField fx:id="input_adresse" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="416.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="146.0" text="Téléphone" />
+                  <JFXTextField fx:id="input_telephone" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="416.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="146.0" text="Mail" />
+                  <JFXTextField fx:id="input_mail" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="416.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="146.0" text="Hotel" />
+                  <JFXComboBox fx:id="combo_hotel" focusColor="#405aa8" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: white;" unFocusColor="#4d4d4d" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="416.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="146.0" text="Role" />
+                  <JFXComboBox fx:id="combo_role" prefHeight="25.0" prefWidth="137.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutY="357.0" prefHeight="34.0" prefWidth="416.0">
+         <children>
+            <JFXButton fx:id="annuler" onAction="#retour" prefHeight="25.0" prefWidth="90.0" styleClass="logout" text="Annuler">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton fx:id="valider" onAction="#valider" prefHeight="25.0" prefWidth="90.0" styleClass="logout" text="Valider">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Label layoutX="19.0" layoutY="290.0" prefHeight="42.0" prefWidth="388.0" text="N'oubliez pas de vérifier (ajouter) l'adresse mail" wrapText="true" />
+      <Label layoutX="19.0" layoutY="324.0" text="dans le serveur SMTP avant l'opération" />
+   </children>
+</AnchorPane>
